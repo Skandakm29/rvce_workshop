@@ -23,7 +23,7 @@ module top (
     reg [31:0] cntr_9600 = 32'b0;
     parameter period_9600 = 625;
     
-uart_tx_8n1 DanUART (.clk (clk_9600), .txbyte("a"), .senddata(frequency_counter_i[24]), .tx(uarttx));
+uart_tx_8n1 DanUART (.clk (clk_9600), .txbyte("D"), .senddata(frequency_counter_i[24]), .tx(uarttx));
 //----------------------------------------------------------------------------
 //                                                                          --
 //                       Internal Oscillator                                --
